@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brise: Current Weather, Currently!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            <div class="image-div">
+                <canvas id="weather-image" width="100" height="100"></canvas>
+            </div>
+        </div>
+        <div class="weather-stats">
+            <div class="information">
+                <div class="status">Enter A Location</div>
+                <div class="location">To Check The Weather!</div>
+            </div>
+            <div class="details">
+                <div class="stats">
+                    <div class="title">Wind</div>
+                    <div class="value">N/A</div>
+                </div>
+                <div class="stats">
+                    <div class="title">Temperature</div>
+                    <div class="value">N/A</div>
+                </div>
+                <div class="stats">
+                    <div class="title">Chance of rain</div>
+                    <div class="value">N/A</div>
+                </div>
+            </div>
+            <div class="search-input">
+                <input type="text" class="search" placeholder="Enter A City!">
+            </div>
+        </div>
+    </div>
+    <a href="https://openweathermap.org/" class="openWeatherMap">Powered by OpenWeatherMap API</a>
+    <script src="script.js"></script>
+</body>
+</html>
