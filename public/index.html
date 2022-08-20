@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brise: Current Weather, Currently!</title>
     <link rel="stylesheet" href="style.css">
+    <script defer type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHnQVNpPIbReY0s4dleY09JZHoq1nwtAE&libraries=places">
+    </script>
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div class="content">
@@ -34,11 +38,10 @@
                 </div>
             </div>
             <div class="search-input">
-                <input type="text" class="search" placeholder="Enter A City!">
+                <input type="text" class="search" data-search placeholder="Enter A City!">
             </div>
         </div>
     </div>
     <a href="https://openweathermap.org/" class="openWeatherMap">Powered by OpenWeatherMap API</a>
-    <script src="script.js"></script>
 </body>
 </html>
