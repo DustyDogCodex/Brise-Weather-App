@@ -6,42 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brise: Current Weather, Currently!</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
     <script defer type="text/javascript"
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHnQVNpPIbReY0s4dleY09JZHoq1nwtAE&libraries=places">
     </script>
-    <script defer src="script.js"></script>
 </head>
 <body>
-    <div class="content">
-        <div class="header">
-            <div class="image-div">
-                <canvas id="weather-image" width="100" height="100"></canvas>
+    <div class="header">
+        <div class="header-left-side">
+            <i class="fa-solid fa-cloud fa-6x weather"></i> <!-- code for using FOnt Awesome icons -->
+            <div class="current-temp">
+                <span data-current-temp>420</span>&deg;
             </div>
         </div>
-        <div class="weather-stats">
-            <div class="information">
-                <div class="status">Enter A Location</div>
-                <div class="location">To Check The Weather!</div>
+        <div class="header-right-side">
+            <!-- all of these divs inside header-right-side div have the same classes, since they will be formatted the same way when I start with CSS -->
+            <div class="weather-info">                      
+                <div class="info-heading">High</div>
+                <div><span data-current-high>32</span>&deg;</div>
             </div>
-            <div class="details">
-                <div class="stats">
-                    <div class="title">Wind</div>
-                    <div class="value">N/A</div>
-                </div>
-                <div class="stats">
-                    <div class="title">Temperature</div>
-                    <div class="value">N/A</div>
-                </div>
-                <div class="stats">
-                    <div class="title">Chance of rain</div>
-                    <div class="value">N/A</div>
-                </div>
+            <div class="weather-info">
+                <div class="info-heading">FL High</div>
+                <div><span data-current-fl-high>32</span>&deg;</div>
             </div>
-            <div class="search-input">
-                <input type="text" class="search" data-search placeholder="Enter A City!">
+            <div class="weather-info">
+                <div class="info-heading">Wind</div>
+                <div><span data-current-wind>9</span>mph</div>
+            </div>
+            <div class="weather-info">
+                <div class="info-heading">Low</div>
+                <div><span data-current-low>19</span>&deg;</div>
+            </div>
+            <div class="weather-info">
+                <div class="info-heading">FL Low</div>
+                <div><span data-current-fl-low>12</span>&deg;</div>
+            </div>
+            <div class="weather-info">
+                <div class="info-heading">Precipitation</div>
+                <div><span data-current-precipitation>0.1</span>in</div>
             </div>
         </div>
     </div>
     <a href="https://openweathermap.org/" class="openWeatherMap">Powered by OpenWeatherMap API</a>
+    <a href="https://fontawesome.com/" class="fontawesome">Icons used from Font Awesome Library</a>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/77bcad5efd.js" crossorigin="anonymous"></script> <!-- link for adding font awesome font and icon library. Used for the weather icons used in this app! -->
 </body>
 </html>

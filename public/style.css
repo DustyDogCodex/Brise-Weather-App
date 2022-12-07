@@ -1,0 +1,32 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #ffa500;
+    color: aliceblue;
+    font-family: 'Tilt Neon', cursive;
+}
+
+/* using flex so left and right side show up next to each other. Left side has current temp and right side has additional weather info */
+.header {               
+    display: flex;
+    align-items: center;
+}
+
+.header-left-side {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+    padding: 2%;
+    border-right: 3px solid aliceblue;
+}
+
+.current-temp{
+    font-size: 3rem;
+    margin-left: 5%;
+}
+
