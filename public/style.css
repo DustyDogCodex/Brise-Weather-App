@@ -30,3 +30,45 @@ body {
     margin-left: 5%;
 }
 
+.header-right-side {
+    display: grid;
+    width: 50%;
+    justify-content: space-around;
+    gap: 3%;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+}
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-heading {
+    font-weight: 900;
+    font-size: larger;
+}
+
+.daily-weather-info{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, 100px);
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+    padding: 2%;
+}
+
+.daily-temp {
+    margin: 3%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 0.5rem;
+}
+
+.daily-temp i{
+    margin: 1rem;
+}
