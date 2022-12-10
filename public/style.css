@@ -77,8 +77,16 @@ body {
 /* styling section for hourly weather info table */
 .hourly-data {
     width: 100%;
-    border-spacing: 20px;
-    background: rgb(0, 0, 0, 0.2);
+    border-spacing: 0px;
+    background: rgb(0, 0, 0, 0.3);
+}
+
+td {
+    padding: 15px;
+}
+
+.hourly-data-row:nth-child(2n){
+    background: rgb(0, 0, 0, 0.6);
 }
 
 
