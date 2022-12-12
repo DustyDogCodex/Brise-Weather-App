@@ -410,6 +410,52 @@
         </tbody>
     </table>
 
+    <!-- templates for weather info -->
+    <template id="daily-temp-template">
+        <div class="daily-temp">
+            <i class="fa-solid fa-tornado fa-3x"></i>
+            <div class="day-of-the-week" data-day></div>
+            <div><span data-day-temp></span><span>&deg;</span></div>
+        </div>
+    </template>
+
+    <template id="hourly-data-row-template">
+        <tr class="hourly-data-row">
+            <td>
+                <div class="weather-info">
+                    <div class="info-heading">Thursday</div>
+                    <div>3PM</div>
+                </div>
+            </td>
+            <td>
+                <i class="fa-solid fa-volcano fa-3x"></i>
+            </td>
+            <td>
+                <div class="weather-info">
+                    <div class="info-heading">Temp</div>
+                    <div>31&deg;</div>
+                </div>
+            </td>
+            <td>
+                <div class="weather-info">
+                    <div class="info-heading">Feels Like</div>
+                    <div>27&deg;</div>
+                </div>
+            </td>
+            <td>
+                <div class="weather-info">
+                <div class="info-heading">Wind Speed</div>
+                <div>10 mph</div>
+                </div>
+            </td>
+            <td>
+                <div class="weather-info">
+                    <div class="info-heading">Precipitation</div>
+                    <div>0 in</div>
+                </div>
+            </td>
+        </tr>
+    </template>
 
     <a href="https://openweathermap.org/" class="openWeatherMap">Powered by OpenWeatherMap API</a>
     <a href="https://fontawesome.com/" class="fontawesome">Icons used from Font Awesome Library</a>

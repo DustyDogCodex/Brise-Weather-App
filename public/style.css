@@ -82,7 +82,7 @@ body {
 }
 
 td {
-    padding: 15px;
+    padding: 1rem;
 }
 
 .hourly-data-row:nth-child(2n){
