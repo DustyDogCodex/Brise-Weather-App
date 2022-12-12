@@ -89,4 +89,19 @@ td {
     background: rgb(0, 0, 0, 0.6);
 }
 
+/* styling for footer with links to used resources and API*/
+
+footer{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+}
+
+footer a{
+    color: black;
+    font-size: small;
+}
+
 

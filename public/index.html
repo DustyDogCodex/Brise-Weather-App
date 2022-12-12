@@ -414,7 +414,7 @@
     <template id="daily-temp-template">
         <div class="daily-temp">
             <i class="fa-solid fa-tornado fa-3x"></i>
-            <div class="day-of-the-week" data-day></div>
+            <div class="day-of-the-week" data-date></div>
             <div><span data-day-temp></span><span>&deg;</span></div>
         </div>
     </template>
@@ -423,42 +423,45 @@
         <tr class="hourly-data-row">
             <td>
                 <div class="weather-info">
-                    <div class="info-heading">Thursday</div>
-                    <div>3PM</div>
+                    <div class="info-heading" data-day></div>
+                    <div data-day-time>3PM</div>
                 </div>
             </td>
             <td>
-                <i class="fa-solid fa-volcano fa-3x"></i>
+                <i class="fa-solid fa-volcano fa-3x" data-weather-icon></i>
             </td>
             <td>
                 <div class="weather-info">
                     <div class="info-heading">Temp</div>
-                    <div>31&deg;</div>
+                    <div><span data-day-temp></span><span>&deg;</span></div>
                 </div>
             </td>
             <td>
                 <div class="weather-info">
                     <div class="info-heading">Feels Like</div>
-                    <div>27&deg;</div>
+                    <div><span data-fl-temp></span><span>&deg;</span></div>
                 </div>
             </td>
             <td>
                 <div class="weather-info">
-                <div class="info-heading">Wind Speed</div>
-                <div>10 mph</div>
+                    <div class="info-heading">Wind Speed</div>
+                    <div><span data-wind></span><span> mph</span></div>
                 </div>
             </td>
             <td>
                 <div class="weather-info">
                     <div class="info-heading">Precipitation</div>
-                    <div>0 in</div>
+                    <div><span data-precipitation></span><span> in</span></div>
                 </div>
             </td>
         </tr>
     </template>
 
-    <a href="https://openweathermap.org/" class="openWeatherMap">Powered by OpenWeatherMap API</a>
-    <a href="https://fontawesome.com/" class="fontawesome">Icons used from Font Awesome Library</a>
+    <footer>
+        <a href="https://openweathermap.org/" class="openWeatherMap">Powered by OpenWeatherMap API</a>
+        <a href="https://fontawesome.com/" class="fontawesome">Icons used from Font Awesome Library</a>
+    </footer>
+
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/77bcad5efd.js" crossorigin="anonymous"></script> <!-- link for adding font awesome font and icon library. Used for the weather icons used in this app! -->
 </body>
