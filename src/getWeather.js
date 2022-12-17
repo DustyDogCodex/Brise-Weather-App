@@ -7,4 +7,3 @@ export function getWeather (lat, lon, timezone) {
 }
 
 export { getWeather }
-export { getWeather }
