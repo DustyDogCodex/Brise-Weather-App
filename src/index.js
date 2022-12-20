@@ -1,5 +1,6 @@
 import { getWeather } from './getWeather.js'
 import { parseCurrentWeatherData } from './parseCurrentWeatherData.js'
+import { parseDailyWeatherData } from './parseDailyWeatherData.js'
 
 /* OpenWeatherAPI info */
 /* https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={3a12b0d3db019e926ae376649bb95046} */
@@ -12,7 +13,8 @@ let time_zone = Intl.DateTimeFormat().resolvedOptions().timeZone
 
 getWeather(51.5085,-0.1257,time_zone)
     .then( data => {
-        return {
-            current: (parseCurrentWeatherData(data))
-        }
+        return console.log({
+            current: (parseCurrentWeatherData(data)),
+            daily: (parseDailyWeatherData(data))
+        })
     })
