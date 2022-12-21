@@ -8,6 +8,10 @@ function renderCurrentWeatherData(current){
     document.querySelector('[data-current-precipitation]').textContent = current.precipitation
 }
 
+function renderDailyWeatherData(daily){
+    document.querySelector('[data-current-temp]').textContent = current.currentTemperature
+}
+
 function dataRenderingOnScreen({ current, daily, hourly }){
     renderCurrentWeatherData(current)
 }
