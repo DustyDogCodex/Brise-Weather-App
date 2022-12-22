@@ -13,7 +13,7 @@
 <body>
     <div class="header">
         <div class="header-left-side">
-            <i data-current-weather-icon class="fa-solid fa-cloud fa-6x"></i> <!-- code for using FOnt Awesome icons -->
+            <i data-current-weather-icon></i> <!-- code for using FOnt Awesome icons -->
             <div class="current-temp">
                 <span data-current-temp>420</span> &deg;C
             </div>
@@ -48,7 +48,7 @@
     </div>
 
     <!-- section for displaying weather info for the week ahead -->
-    <div class="daily-weather-info">
+    <div class="daily-weather-info" data-daily-area>
         <div class="daily-temp">
             <i class="fa-solid fa-tornado fa-3x"></i>
             <div class="day-of-the-week">Monday</div>
@@ -410,7 +410,7 @@
     <!-- templates for weather info -->
     <template id="daily-temp-template">
         <div class="daily-temp">
-            <i class="fa-solid fa-tornado fa-3x"></i>
+            <i data-day-weather-icon></i>
             <div class="day-of-the-week" data-date></div>
             <div><span data-day-temp></span><span>&deg;</span></div>
         </div>
