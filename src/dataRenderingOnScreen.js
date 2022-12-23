@@ -26,21 +26,34 @@ function renderDailyWeatherData(daily){
         dailyCard.querySelector('[data-day-temp]').textContent = day.dayTemp
         dailyCard.querySelector('[data-date]').textContent = timeToDayConverter.format(day.timeValue)
         dailyCard.querySelector('[data-day-weather-icon]').classList.add('fa-solid', `${weatherCodeGuide(day.icon)}`, 'fa-3x')
-        console.log(weatherCodeGuide(day.icon))
         dailyWeatherArea.append(dailyCard)
     })
 }
 
 /* JS for rendering hourly weather data */
+/* this is basically the same code as the daily section, except the object containing the data will be different */
 const hourlyWeatherArea = document.querySelector('[data-hourly]')
 const hourlyTempTemplate = document.getElementById('hourly-data-row-template')
+const timeToHourConverter = new Intl.DateTimeFormat(undefined, { hour: "numeric" })
 function renderHourlyWeatherData(hourly){
-
+    hourlyWeatherArea.innerHTML = ''
+    hourly.forEach(hour => {
+        const hourlyCard = hourlyTempTemplate.content.cloneNode(true)
+        hourlyCard.querySelector('[data-day]').textContent = timeToDayConverter.format(hour.timeValue)
+        hourlyCard.querySelector('[data-day-time]').textContent = timeToHourConverter.format(hour.timeValue)
+        hourlyCard.querySelector('[data-hour-weather-icon]').classList.add('fa-solid', `${weatherCodeGuide(hour.icon)}`, 'fa-3x')
+        hourlyCard.querySelector('[data-day-temp]').textContent = hour.temp
+        hourlyCard.querySelector('[data-fl-temp]').textContent = hour.FLTemp
+        hourlyCard.querySelector('[data-wind]').textContent = hour.windSpeed
+        hourlyCard.querySelector('[data-precipitation]').textContent = hour.precipitation
+        hourlyWeatherArea.append(hourlyCard)
+    })
 }
 
 function dataRenderingOnScreen({ current, daily, hourly }){
     renderCurrentWeatherData(current)
     renderDailyWeatherData(daily)
+    renderHourlyWeatherData(hourly)
 }
 
 export { dataRenderingOnScreen }
