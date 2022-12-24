@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="loader">
     <div class="header">
         <div class="header-left-side">
             <i data-current-weather-icon></i> <!-- code for using FOnt Awesome icons -->
@@ -420,7 +420,7 @@
         <tr class="hourly-data-row">
             <td>
                 <div class="weather-info">
-                    <div class="info-heading" data-day></div>
+                    <div class="info-heading" data-day class="fixed-row"></div>
                     <div data-day-time>3PM</div>
                 </div>
             </td>
@@ -455,7 +455,7 @@
     </template>
 
     <footer>
-        <a href="https://openweathermap.org/" class="openWeatherMap">Powered by OpenWeatherMap API</a>
+        <a href="https://open-meteo.com/" class="OpenMeteo">Powered by OpenMeteo API</a>
         <a href="https://fontawesome.com/" class="fontawesome">Icons used from Font Awesome Library</a>
     </footer>
 
