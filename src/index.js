@@ -10,4 +10,3 @@ import { getWeather } from './getWeather.js'
 let time_zone = Intl.DateTimeFormat().resolvedOptions().timeZone
 
 getWeather(51.5085,-0.1257,time_zone)
-    /* .then(res => {console.log(res.data)}) */
