@@ -1,6 +1,6 @@
-# Brise-Weather-App-
+# Brise-Weather-App
 
-LIVE DEMO
+&#x26C5; &#x26C8; <a href="https://dustydogcodex.github.io/Brise-Weather-App/"> LIVE DEMO </a> &#x1F301; &#x2614;
 
 This is a simple weather app built using vanilla JavaScript. This app fetches weather forecast data from the OpenMeteo API and displays it on the screen. The app asks for the users current location to fetch weather data for that city from the OpenMeteo API database. The weather data is then split up and displayed in 3 different sections.The top section displays the current weather at the users location. After that, the second section contains 7 cards displaying the weather forecast for the week ahead. The last section contains hourly weather data for the week ahead as well. 
 
@@ -14,7 +14,11 @@ Through this project, I learned:
 
 How to use:
 To check out the app, please use the live demo link above.
-To use this app for yourself, you can clone the repository and its associated dependencies and then run it using webpack. The code is written in HTML/CSS/JavaScript.
+To use this app for yourself, you can clone the repository and its associated dependencies and then run it using webpack. 
+
+use "npm start" in your terminal to run it on your local machine.
+
+The code is written in HTML/CSS/JavaScript.
 
 Future extensions/features to be added:
 
